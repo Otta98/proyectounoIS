@@ -3,27 +3,40 @@
 	"version": "0.0.1",
 	"description": "InfoSec project for freeCodeCamp",
 	"scripts": {
-		"start": "node server.js"
+	  "start": "node server.js",
+	  "test": "mocha tests/2_functional-tests.js" 
 	},
 	"dependencies": {
-		"body-parser": "^1.15.2",
-		"chai": "^4.2.0",
-		"chai-http": "^4.3.0",
-		"cors": "^2.8.1",
-		"dotenv": "^8.2.0",
-		"express": "^4.14.0",
-		"helmet": "^3.1.0",
-		"mocha": "^3.2.0"
+	  "body-parser": "^1.15.2",
+	  "chai": "^4.2.0",
+	  "chai-http": "^4.3.0",
+	  "cors": "^2.8.1",
+	  "dotenv": "^8.2.0",
+	  "express": "^4.14.0",
+	  "helmet": "^3.1.0",
+	  "mocha": "^3.2.0",
+	  "express-rate-limit": "^6.7.0",
+	  "xss-clean": "^0.1.1",
+	  "express-mongo-sanitize": "^2.2.0",
+	  "node-fetch": "^2.6.7",
+	  "mongodb": "^4.5.0"
+	},
+	"devDependencies": {
+	  "nodemon": "^2.0.20" 
 	},
 	"repository": {
-		"type": "git",
-		"url": "https://github.com/freeCodeCamp/boilerplate-project-stockchecker"
+	  "type": "git",
+	  "url": "https://github.com/freeCodeCamp/boilerplate-project-stockchecker"
 	},
 	"keywords": [
-		"node",
-		"express"
+	  "node",
+	  "express",
+	  "infosec",
+	  "freecodecamp"
 	],
-	"license": "MIT"
-}
-
-
+	"license": "MIT",
+	"engines": {
+	  "node": ">=14.0.0" 
+	}
+  }
+  
